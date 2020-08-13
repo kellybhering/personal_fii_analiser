@@ -1,0 +1,14 @@
+default: &default
+  adapter: 'sqlite3'
+
+production:
+  <<: *default
+  database: 'production.db'
+
+development:
+  <<: *default
+  database: 'development.db'
+
+test:
+  <<: *default
+  database: 'test.db'

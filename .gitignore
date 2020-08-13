@@ -1,0 +1,4 @@
+development.db
+test.db
+production.db
+.byebug_history

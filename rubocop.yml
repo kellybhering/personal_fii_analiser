@@ -1,0 +1,62 @@
+require: rubocop-rspec
+inherit_from: ../.rubocop.yml
+
+Rails:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.6.2
+
+  Exclude:
+    - Gemfile
+    - Rakefile
+    - spec/spec_helper.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+ Enabled: true
+
+Style/MultilineIfModifier:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/NotToNot:
+  Enabled: false
+
+RSpec/ImplicitSubject:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 140
+
+Metrics/MethodLength:
+  Max: 15
+
+RSpec/NestedGroups:
+  Max: 6
+
+RSpec/ExampleLength:
+  Max: 7
+
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"
+    - "**/factories/*.rb"
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "**/*_spec.rb"
