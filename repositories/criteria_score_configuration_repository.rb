@@ -1,0 +1,2 @@
+class CriteriaScoreConfigurationRepository < ApplicationRepository
+end
